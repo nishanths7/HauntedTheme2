@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Friendly Ghost</title>
     <link rel="Stylesheet" href="stylenish.css">
 </head>
+
 <body>
     <div class="navbar">
         <a href="#home">home</a>
@@ -14,52 +16,109 @@
     </div>
     <div class="top10">
         <h1>
-        top 10 
+            top 10
         </h1>
     </div>
     <div class="hh">
-        <h2> 
-        haunted houses
+        <h2>
+            haunted houses
         </h2>
     </div>
     <div class="bote">
         <p>
-        <sub>based on true events</sub>
+            <sub>based on true events</sub>
         </p>
     </div>
     <div class="section">
         <h2 id="about">
-        about
+            about
         </h2>
     </div>
     <div class="p1">
-        <p1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus nesciunt consequatur sint! Dolore, fugit velit odit omnis consequatur error accusantium sed necessitatibus, quos totam quia, ducimus ipsam minus accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt magnam soluta sequi voluptatibus nostrum obcaecati natus est nihil debitis ad blanditiis itaque minima fugit repellat, sapiente iusto consectetur dolor!</p1>
+        <p1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus nesciunt consequatur sint! Dolore,
+            fugit velit odit omnis consequatur error accusantium sed necessitatibus, quos totam quia, ducimus ipsam
+            minus accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt magnam soluta
+            sequi voluptatibus nostrum obcaecati natus est nihil debitis ad blanditiis itaque minima fugit repellat,
+            sapiente iusto consectetur dolor!</p1>
     </div>
     <div class="section">
         <h2 id="gallery">
-        gallery
+            gallery
         </h2>
+        <!--This is the slideshow code, the next and previous buttons and point/dot under the images-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="image/Slideshow3.jfif" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/Slideshow1.jfif" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/Slideshow2.jfif" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/Slideshow4.jfif" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="next" onclick="plusDivs(+1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
     </div>
+
+    <!--This is the script for the slideshow on the main page, it will be added to the javascript file-->
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showDivs(slideIndex = n);
+        }
+        function showDivs(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length };
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
     <div class="section">
         <h2 id="contact">
-        contact
+            contact
         </h2>
     </div>
     <form action="action.php" method="post">
-        <label for="Firstname" >First name:</label>
+        <label for="Firstname">First name:</label>
         <input type="text" name="Firstname" id="Firstname" required>
         <br><br>
         <label for="Lastname">Last name:</label>
         <input type="text" name="Lastname" id="Lastname" required>
         <br><br>
-        <label for="myemail"style="text-align: left;">Email:</label>
+        <label for="myemail" style="text-align: left;">Email:</label>
         <input type="email" id="myemail" required>
         <br><br>
         <label for="address">Address:</label>
         <textarea rows="3" cols="25" name="address" id="address" required></textarea>
         <br><br>
         <label for="mydate">Select Date:</label>
-        <input type="date" value="2019-04-15" id="mydate"required>
+        <input type="date" value="2019-04-15" id="mydate" required>
         <br><br>
         <label for="Comments">Comments:</label>
         <input type="text" id="Comments" required>
@@ -68,4 +127,5 @@
         <input type="reset" value="Reset">
     </form>
 </body>
+
 </html>
