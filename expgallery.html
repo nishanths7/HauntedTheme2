@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery - Fading Faces</title>
+    <meta name="keywords" content="haunted, abandoned, urbex, ghost, supernatural, paranormal, urban, manor, explore, spooky, decrepit, delerict">
+    <meta name="description" content="Photo gallery of a haunted location explorer">
+    <link rel="Stylesheet" href="stylegallery.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="haunted theme 2.html#top">home</a>
+        <a href="haunted theme 2.html#about">about</a>
+        <a href="haunted theme 2.html#gallery">gallery</a>
+        <a href="haunted theme 2.html#contact">contact</a>
+        <a href="haunted theme 2.html#">login</a>
+    </div>
+    <br>
+    <div class="galtitle">
+        the bull manor, england
+    </div>
+    <br>
+    <div class="content" style="max-width:1000px">
+        <img class="mySlides" src="image/best_bullmanor/01.jpg" style="width:90%" alt="Bull Manor 01">
+        <img class="mySlides" src="image/best_bullmanor/02.jpg" style="width:90%;display:none" alt="Bull Manor 02">
+        <img class="mySlides" src="image/best_bullmanor/05.jpg" style="width:90%;display:none" alt="Bull Manor 03">
+        <img class="mySlides" src="image/best_bullmanor/06.jpg" style="width:90%;display:none" alt="Bull Manor 04">
+        <img class="mySlides" src="image/best_bullmanor/07.jpg" style="width:90%;display:none" alt="Bull Manor 05">
+        <img class="mySlides" src="image/best_bullmanor/11.jpg" style="width:90%;display:none" alt="Bull Manor 06">
+        <img class="mySlides" src="image/best_bullmanor/10.jpg" style="width:90%;display:none" alt="Bull Manor 07">
+        <img class="mySlides" src="image/best_bullmanor/08.jpg" style="width:90%;display:none" alt="Bull Manor 08">
+        <img class="mySlides" src="image/best_bullmanor/14.jpg" style="width:90%;display:none" alt="Bull Manor 09">
+        
+        
+        <div class="row-padding section">
+        <div class="col s4">
+          <img class="photo active" src="image/best_bullmanor/01.jpg" alt="bull tumbnail 01"
+          style="width:10%;cursor:pointer" onclick="currentDiv(1)">
+          <img class="photo active" src="image/best_bullmanor/02.jpg" alt="bull tumbnail 02"
+          style="width:10%;cursor:pointer" onclick="currentDiv(2)">
+          <img class="photo active" src="image/best_bullmanor/05.jpg" alt="bull tumbnail 03"
+          style="width:10%;cursor:pointer" onclick="currentDiv(3)">
+          <img class="photo active" src="image/best_bullmanor/06.jpg" alt="bull tumbnail 04"
+          style="width:10%;cursor:pointer" onclick="currentDiv(4)">
+          <img class="photo active" src="image/best_bullmanor/07.jpg" alt="bull tumbnail 05"
+          style="width:10%;cursor:pointer" onclick="currentDiv(5)">
+          <img class="photo active" src="image/best_bullmanor/11.jpg" alt="bull tumbnail 06"
+          style="width:10%;cursor:pointer" onclick="currentDiv(6)">
+          <img class="photo active" src="image/best_bullmanor/10.jpg" alt="bull tumbnail 07"
+          style="width:10%;cursor:pointer" onclick="currentDiv(7)">
+          <img class="photo active" src="image/best_bullmanor/08.jpg" alt="bull tumbnail 08"
+          style="width:10%;cursor:pointer" onclick="currentDiv(8)">
+          <img class="photo active" src="image/best_bullmanor/14.jpg" alt="bull tumbnail 09"
+          style="width:10%;cursor:pointer" onclick="currentDiv(9)">
+        </div>
+        </div>
+    </div>
+
+      <script>
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("photo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(); 
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>
