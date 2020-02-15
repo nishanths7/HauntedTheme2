@@ -1,5 +1,5 @@
 html { 
-        background: url(image/hhouse.jpg) no-repeat center center fixed; 
+        background: black no-repeat center center fixed; /* Removed the house image from bg ~Natalie*/
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -13,10 +13,9 @@ html {
     word-spacing: 85px;
     -webkit-font-feature-settings: "smcp"; 
     position: sticky;
-    top:0px; 
+    top: 0;
     background-color: black;
     padding: 20px 20px 20px 20px ;
-    margin: -8px;
     z-index: 9999;
 }
 
@@ -99,4 +98,52 @@ input,textarea,text {
         min-width: 10%;
         max-width:50%;
         text-align: center;
+}
+
+/*Natalie*/
+
+.galtitle {   /*Gallery Title*/
+    font-family: serif;
+    -webkit-font-feature-settings: "smcp";
+    font-size: 31px;
+    text-align: center;
+    border-style: none;
+    border-left: 20px rgb(201, 201, 178); 
+    color: rgb(201, 201, 178);
+    filter: blur(2px)
+}
+
+.galtitle:hover {
+    text-decoration: none;
+    color:rgb(201, 201, 178);
+    filter: none
+}
+
+.photo{ /*Thumbnail Opacity*/
+    opacity: 40%
+}
+
+.photo:hover{
+    opacity: 100%
+}
+
+.content{ /* This centers the gallery, in case I can't figure out the side thumbnail layout */
+    margin: 0 auto;
+}
+
+/* This part was an experiment that I haven't finished yet, please disregard.
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.columnmain {
+    flex: 90%;
+    padding: 0 4px;
+  }
+
+.columnthumb {
+    flex: 10%;
+    padding: 0 4px;
 }
