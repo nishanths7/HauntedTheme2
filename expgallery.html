@@ -7,7 +7,7 @@
     <link rel="Stylesheet" href="stylegallery.css">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar"> <!-- Navigation -->
         <a href="haunted theme 2.html#top">home</a>
         <a href="haunted theme 2.html#about">about</a>
         <a href="haunted theme 2.html#gallery">gallery</a>
@@ -15,48 +15,54 @@
         <a href="haunted theme 2.html#">login</a>
     </div>
     <br>
-    <div class="galtitle">
-        the bull manor, england
+    <div class="galtitle" id="berkyn"> <!-- The title of the location Berkyn/Bull Manor -->
+        berkyn manor, berkshire, england
     </div>
     <br>
-    <div class="content" style="max-width:1000px">
+    <div class="content" style="max-width:1000px"> <!-- The images that you view in the large window-->
         <img class="mySlides" src="image/best_bullmanor/01.jpg" style="width:90%" alt="Bull Manor 01">
         <img class="mySlides" src="image/best_bullmanor/02.jpg" style="width:90%;display:none" alt="Bull Manor 02">
-        <img class="mySlides" src="image/best_bullmanor/05.jpg" style="width:90%;display:none" alt="Bull Manor 03">
-        <img class="mySlides" src="image/best_bullmanor/06.jpg" style="width:90%;display:none" alt="Bull Manor 04">
-        <img class="mySlides" src="image/best_bullmanor/07.jpg" style="width:90%;display:none" alt="Bull Manor 05">
-        <img class="mySlides" src="image/best_bullmanor/11.jpg" style="width:90%;display:none" alt="Bull Manor 06">
-        <img class="mySlides" src="image/best_bullmanor/10.jpg" style="width:90%;display:none" alt="Bull Manor 07">
+        <img class="mySlides" src="image/best_bullmanor/03.jpg" style="width:90%;display:none" alt="Bull Manor 03">
+        <img class="mySlides" src="image/best_bullmanor/04.jpg" style="width:90%;display:none" alt="Bull Manor 04">
+        <img class="mySlides" src="image/best_bullmanor/05.jpg" style="width:90%;display:none" alt="Bull Manor 05">
+        <img class="mySlides" src="image/best_bullmanor/06.jpg" style="width:90%;display:none" alt="Bull Manor 06">
+        <img class="mySlides" src="image/best_bullmanor/07.jpg" style="width:90%;display:none" alt="Bull Manor 07">
         <img class="mySlides" src="image/best_bullmanor/08.jpg" style="width:90%;display:none" alt="Bull Manor 08">
-        <img class="mySlides" src="image/best_bullmanor/14.jpg" style="width:90%;display:none" alt="Bull Manor 09">
+        <img class="mySlides" src="image/best_bullmanor/09.jpg" style="width:90%;display:none" alt="Bull Manor 09">
+        <img class="mySlides" src="image/best_bullmanor/10.jpg" style="width:90%;display:none" alt="Bull Manor 10">
+        <img class="mySlides" src="image/best_bullmanor/11.jpg" style="width:90%;display:none" alt="Bull Manor 11">
         
         
-        <div class="row-padding section">
+        <div class="row-padding section"> <!-- The thumbnail images for Berkyn/Bull Manor-->
         <div class="col s4">
-          <img class="photo active" src="image/best_bullmanor/01.jpg" alt="bull tumbnail 01"
+          <img class="photo active" src="image/best_bullmanor/01.jpg" alt="bull thumbnail 01"
           style="width:10%;cursor:pointer" onclick="currentDiv(1)">
-          <img class="photo active" src="image/best_bullmanor/02.jpg" alt="bull tumbnail 02"
+          <img class="photo active" src="image/best_bullmanor/02.jpg" alt="bull thumbnail 02"
           style="width:10%;cursor:pointer" onclick="currentDiv(2)">
-          <img class="photo active" src="image/best_bullmanor/05.jpg" alt="bull tumbnail 03"
+          <img class="photo active" src="image/best_bullmanor/03.jpg" alt="bull thumbnail 03"
           style="width:10%;cursor:pointer" onclick="currentDiv(3)">
-          <img class="photo active" src="image/best_bullmanor/06.jpg" alt="bull tumbnail 04"
+          <img class="photo active" src="image/best_bullmanor/04.jpg" alt="bull thumbnail 04"
           style="width:10%;cursor:pointer" onclick="currentDiv(4)">
-          <img class="photo active" src="image/best_bullmanor/07.jpg" alt="bull tumbnail 05"
+          <img class="photo active" src="image/best_bullmanor/05.jpg" alt="bull thumbnail 05"
           style="width:10%;cursor:pointer" onclick="currentDiv(5)">
-          <img class="photo active" src="image/best_bullmanor/11.jpg" alt="bull tumbnail 06"
+          <img class="photo active" src="image/best_bullmanor/06.jpg" alt="bull thumbnail 06"
           style="width:10%;cursor:pointer" onclick="currentDiv(6)">
-          <img class="photo active" src="image/best_bullmanor/10.jpg" alt="bull tumbnail 07"
+          <img class="photo active" src="image/best_bullmanor/07.jpg" alt="bull thumbnail 07"
           style="width:10%;cursor:pointer" onclick="currentDiv(7)">
-          <img class="photo active" src="image/best_bullmanor/08.jpg" alt="bull tumbnail 08"
+          <img class="photo active" src="image/best_bullmanor/08.jpg" alt="bull thumbnail 08"
           style="width:10%;cursor:pointer" onclick="currentDiv(8)">
-          <img class="photo active" src="image/best_bullmanor/14.jpg" alt="bull tumbnail 09"
+          <img class="photo active" src="image/best_bullmanor/09.jpg" alt="bull thumbnail 09"
           style="width:10%;cursor:pointer" onclick="currentDiv(9)">
+          <img class="photo active" src="image/best_bullmanor/10.jpg" alt="bull thumbnail 10"
+          style="width:10%;cursor:pointer" onclick="currentDiv(10)">
+          <img class="photo active" src="image/best_bullmanor/11.jpg" alt="bull thumbnail 11"
+          style="width:10%;cursor:pointer" onclick="currentDiv(11)">
         </div>
         </div>
     </div>
 
-      <script>
-        function currentDiv(n) {
+    <script>
+      function currentDiv(n) {
           showDivs(slideIndex = n);
         }
         
@@ -75,6 +81,6 @@
           x[slideIndex-1].style.display = "block";
           dots[slideIndex-1].className += " active";
         }
-        </script>
+      </script>
 </body>
 </html>

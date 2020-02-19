@@ -102,7 +102,7 @@ input,textarea,text {
 
 /*Natalie*/
 
-.galtitle {   /*Gallery Title*/
+.galtitle {   /*Image Caption Font*/
     font-family: serif;
     -webkit-font-feature-settings: "smcp";
     font-size: 31px;
@@ -110,26 +110,27 @@ input,textarea,text {
     border-style: none;
     border-left: 20px rgb(201, 201, 178); 
     color: rgb(201, 201, 178);
-    filter: blur(2px)
+    filter: blur(1px)
 }
 
-.galtitle:hover {
+.galtitle:hover { /*The Blur Effect on the Image Captions*/
     text-decoration: none;
     color:rgb(201, 201, 178);
     filter: none
 }
 
-.photo{ /*Thumbnail Opacity*/
+.photo{ /*Thumbnail Transparency*/
     opacity: 40%
 }
 
-.photo:hover{
+.photo:hover{ /*Thumbnail Full Opacity during Hover*/
     opacity: 100%
 }
 
-.content{ /* This centers the gallery, in case I can't figure out the side thumbnail layout */
+/* This centers the gallery, in case I can't figure out the side thumbnail layout */
+/*.content{ 
     margin: 0 auto;
-}
+}*/
 
 /* This part was an experiment that I haven't finished yet, please disregard.
 .row {
