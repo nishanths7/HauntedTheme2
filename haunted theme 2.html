@@ -13,7 +13,7 @@
 
 <body>
     <div class="navbar">
-        <a href="#home">home</a>
+        <a href="#top">home</a>
         <a href="#about">about</a>
         <a href="#gallery">gallery</a>
         <a href="#contact">contact</a>
@@ -24,18 +24,30 @@
             top 10
         </h1>
     </div>
-    <div class="hh">
-        <h2 class="line-1 anim-typewriter">Forlorn Places, Fading Faces</h2>
+    <div class="fpff">
+        <h2>Forlorn Places, Fading Faces</h2>
+    </div>
+    <div class="fpff2">
+        <h2>Forlorn Places, Fading Faces</h2>
     </div>
     <div class="bote">
         <p>
             <sub>based on true events</sub>
         </p>
     </div>
+    <div class="hrleft">
+        <hr color="ivory">
+    </div>
+    <div class="hrright">
+        <hr color="ivory">
+    </div>
     <div class="section">
         <h2 id="about">
             about
         </h2>
+    </div>
+    <div class="kiahpic">
+        <img class="resize" img src="image/newkiah.jpg">
     </div>
     <div class="p1">
         <p1>Hi there!<br><br>
@@ -52,7 +64,6 @@
         <h2 id="gallery">
             gallery
         </h2>
-        <a href="expgallery.html" style="color:ivory;">view my full journey</a>
         <!--This is the slideshow code, the next and previous buttons and point/dot under the images-->
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -78,7 +89,9 @@
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </div>
-
+    <div class="vmfj">
+    <a href="expgallery.html" style="color:ivory;">view my full journey</a>
+    </div>
     <!--This is the script for the slideshow on the main page, it will be added to the javascript file-->
     <script type="text/javascript">
         var slideIndex = 1;
@@ -112,28 +125,30 @@
             contact
         </h2>
     </div>
+    <div class="form">
     <form action="action.php" method="post">
-        <label for="Firstname">First name:</label>
-        <input type="text" name="Firstname" id="Firstname" required>
+        <label for="Firstname">First Name:</label>
+        <input type="text" style= color:rgb(115,114,102) name="Firstname" id="Firstname" required>
         <br><br>
-        <label for="Lastname">Last name:</label>
-        <input type="text" name="Lastname" id="Lastname" required>
+        <label for="Lastname">Last Name:</label>
+        <input type="text" style= color:rgb(115,114,102) name="Lastname" id="Lastname" required>
         <br><br>
         <label for="myemail" style="text-align: left;">Email:</label>
-        <input type="email" id="myemail" required>
+        <input type="email" style= color:rgb(115,114,102) id="myemail" required>
         <br><br>
         <label for="address">Address:</label>
-        <textarea rows="3" cols="25" name="address" id="address" required></textarea>
+        <textarea rows="3" cols="25" name="address" style= color:rgb(115,114,102) id="address" required></textarea>
         <br><br>
         <label for="mydate">Select Date:</label>
-        <input type="date" value="2019-04-15" id="mydate" required>
+        <input type="date" value="0000-00-00" style= color:rgb(115,114,102) id="mydate" required>
         <br><br>
         <label for="Comments">Comments:</label>
-        <input type="text" id="Comments" required>
+        <input type="text" style= color:rgb(115,114,102) id="Comments" required>
         <br><br>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
     </form>
+    </div>
 </body>
 
 </html>
