@@ -39,17 +39,30 @@ a:hover, a:active {
     text-align: center;
     color: ivory;
     position: relative; bottom: 120px;
-    opacity: 44%;
+    opacity: 0%;
 }
 
-.hh {
+.fpff {
     font-family: serif;
     -webkit-font-feature-settings: "smcp";
     font-size: 40px;
     text-align: center;
-    position: relative; bottom: 310px;
+    position: relative; bottom: 380px;
     letter-spacing: 14px;
     color: ivory;
+    opacity: 95%;
+}
+
+.fpff2 {
+    font-family: serif;
+    -webkit-font-feature-settings: "smcp";
+    font-size: 40px;
+    text-align: center;
+    position: relative; bottom: 500px;
+    letter-spacing: 14px;
+    color: ivory;
+    opacity: 70%;
+    filter: blur(2.5px);
 }
 
 .bote {
@@ -57,26 +70,50 @@ a:hover, a:active {
     -webkit-font-feature-settings: "smcp";
     font-size: 20px;
     text-align: center;
-    position: relative; bottom: 130px;
+    position: relative; bottom: 178px;
     color: ivory;
     opacity: 84%;
+}
+
+.hrleft {
+    width: 80px; height: 2%;
+    position: relative; bottom: 208px; left: 540px;
+    opacity: 78%;
+}
+
+.hrright {
+    width: 80px; height: 2%;
+    position: relative; bottom: 218px; left: 820px;
+    opacity: 78%;
 }
 
 .section {
     font-family: serif;
     -webkit-font-feature-settings: "smcp";
     font-size: 31px;
-    text-align: left;
+    text-align: center;
     border-left: 20px ivory; 
     color: ivory;
+}
+
+.kiahpic {
+    float: right;
+    position: relative; right: 222px; top: 20px;
+}
+
+.resize {
+    width: 450px;
+    height: 480px;
+    object-fit: cover;
 }
 
 .p1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: auto;
-    text-align: left justify;
+    text-align: left justify; 
     width: 30%;
     color: ivory;
+    position: relative; left: 218px;
 }
 
 label {
@@ -107,7 +144,7 @@ input,textarea,text {
     margin: auto;
     height: 100%;
     min-height: 500px;
-    max-height: 700px;
+    max-height: 600px;
 
 }
 /*The width and height of the slideshow image*/
@@ -115,7 +152,7 @@ input,textarea,text {
     min-width: 500px;
     max-width: 1000px;
     min-height: 500px;
-    max-height: 650px;
+    max-height: 600px;
     height: 100%;
     width: 100%;
 }
@@ -123,7 +160,7 @@ input,textarea,text {
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
-    position: absolute;
+    position: absolute; 
     top: 50%;
     width: auto;
     padding: 16px;
@@ -173,38 +210,28 @@ to {opacity: 1}
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #999999;
+    background-color: ivory;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    position: relative; bottom: 24px;
+    opacity: 40%;
 }
 .active, .dot:hover {
-    background-color: #111111;
-}
-/*Typing animation code */
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 15em;
-    margin: 0 auto;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
+    background-color: ivory;
+    filter: blur(2px);
+    opacity: 70%;
 }
 
-/* Typing Animation */
-.anim-typewriter{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+.vmfj {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-feature-settings: "smcp";
+    font-size: auto;
+    color: ivory;
+    position: relative; right: 225px; bottom: 50px;
 }
-/* Typing Animation */
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 20em;}
-}
-/* Typing Animation */
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+
+.form {
+    padding: 60px 80px 40px 222px; 
 }
