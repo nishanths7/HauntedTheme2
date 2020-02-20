@@ -1,10 +1,9 @@
 html { 
-        background: url(image/hhouse.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        scroll-behavior: smooth;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -102,8 +101,8 @@ a:hover, a:active {
 }
 
 .resize {
-    width: 450px;
-    height: 480px;
+    width: 400px;
+    height: 430px;
     object-fit: cover;
 }
 
@@ -130,7 +129,10 @@ input,textarea,text {
     display: inline-block;
     min-width: 10%;
     max-width:50%;
-    text-align: center;
+    text-align: left;
+    caret-color: red;
+    font-family: sans-serif;
+    color:rgb(115,114,102) 
 }
 
 .mySlides{
@@ -235,3 +237,54 @@ to {opacity: 1}
 .form {
     padding: 60px 80px 40px 222px; 
 }
+
+/*Blurred background image*/
+.img-src.blurred-image {
+    opacity:0;
+    -webkit-filter: blur(20px) brightness(0.7);
+    -ms-filter: blur(20px) brightness(0.7);
+    -o-filter: blur(20px) brightness(0.7);
+    filter: blur(20px) brightness(0.7);
+}
+
+/* */
+#blurred-image-container {
+    display:block;
+    padding:0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+/*Background Image*/
+.img-src { 
+    position: absolute;
+    background: url(image/hhouse.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    top: -10%;
+    bottom: 10%;
+    left: -10%;
+    right: 10%;
+    width:120%;
+    height:120%;
+}
+/*logo and change opacity when hovering*/
+.logo {
+    font-size: 30px;
+    width: 50px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+  }
