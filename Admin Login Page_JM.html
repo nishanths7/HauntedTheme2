@@ -1,0 +1,469 @@
+!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Admin Login Page_Style.css">
+
+
+
+<!-- ***** Title Page ***** -->
+
+</head>
+<body>
+    <div  id ="Haunted House Admin Page" class="header">
+        <h1 class="center" >Haunted House Admin Page</h1>
+</div>
+<div style="padding-bottom:600px">
+    
+<!-- ***** Verticle Tabs - Section Names ***** -->
+
+<div class="tab">
+  <button class="tablinks" onclick="openSection(event, 'Admin Details')" id="defaultOpen">Admin Details</button>
+  <button class="tablinks" onclick="openSection(event, 'Media Library')">Media Library</button>
+  <button class="tablinks" onclick="openSection(event, 'Manage Users')">Manage Users</button>
+</div>
+
+<!-- ***** 'Admin Profile' Section Details ***** -->
+
+<div class="content">
+<div id="Admin Details" class="tabcontent">
+  <h1 class="center"> Admin Details</h1>
+
+  <form action="/action_page.php">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Team">
+<br>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Three">
+<br>
+    <label for="dname">Display Name:</label>
+    <input type="text"  id="dname" name="dname" form="form1" placeholder="Kiah" >
+<br>
+    <label for="Email">Email:</label>
+    <input type="Email"  id="Email" name="Email" form="form1" placeholder="kiah@hauntedhouse.com">
+<br>
+    <label for="iname">Other Details:</label>
+    <input type="text"  id="iname" name="iname" form="form1" placeholder="Enter other information">
+    <br>      
+<input type="submit" value="Update Profile">
+    </select>
+  </form>
+  
+</div>
+
+
+<div id="Manage Users" class="tabcontent">
+    
+    <h1 class="center" > Current Users</h1>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Userid</th>
+        <th>Email address</th>
+        <th>Access</th>
+        <th>Delete</th>
+      </tr>
+      <tr>
+        <td>Jahnavi</td>
+        <td>Munagala</td>
+        <td>jahnavi</td>
+        <td>jahnavi@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td><img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      <tr>
+        <td>Natalia</td>
+        <td>Shevcun</td>
+        <td>natalaia</td>
+        <td>natalia@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td>
+            <img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      <tr>
+        <td>Nishanth</td>
+        <td>Sakthivel</td>
+        <td>Nishanth</td>
+        <td>nishanth@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td><img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      <tr>
+        <td>Hossein</td>
+        <td>Darparish</td>
+        <td>Hossein</td>
+        <td>hossein@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td><img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      
+    </table>
+     <br>
+     <br>
+     <br>
+     
+    
+     <h1 class="center">Add a New User</h1>
+       <form action="/action_page.php">
+    
+          <label for="email">Enter email:</label>
+          <input type="email" id="email" name="email">
+        
+          <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Team">
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Three">
+        
+        <label for="Roles">Role:</label>
+        <select id="Roles" name="Roles">
+      <option value="Super Admin">Super Admin</option>
+      <option value="Admin">Admin</option>
+      <option value="Editor">Editor</option>
+      <option value="Viewer">Viewer</option>
+    </select>
+    
+    <label for="Expire">Expire:</label>
+     <br>
+    <input type="date" id="Expire" name="Expiry Date:">
+    
+    <br>
+    </select>    
+    <input type="submit" value="Submit">
+        
+      </form>
+    
+</div>
+
+
+<!--***** 'Media Library' Section Details *****-->
+
+
+<div id="Media Library" class="tabcontent">
+    <h1 class="center" >Media Library</h1>
+              
+    <article>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+            </head> 
+            <body>
+        
+                <!--***** 'Media Library'Section - Category 1 *****-->
+
+                <button class="accordion">Category 1</button>
+                <div class="panel"> 
+                <div class="responsive">
+                <div class="gallery">
+                <a target="_blank" href="01.jpg">
+                <figure id="myFigure">
+                <img src="01.jpg" alt="01" width=350px height=300px>
+                </figure>
+               </a>
+               <button onclick="myFunction()">edit</button>
+            <button onclick="myFunction()">delete</button>
+            <button onclick="myFunction()">view</button>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+            <a target="_blank" href="04.jpg">
+            <figure id="myFigure">
+            <img src="04.jpg" alt="04" width=350px height=300px>
+            </figure>
+           </a>
+           <button onclick="myFunction()">edit</button>
+        <button onclick="myFunction()">delete</button>
+        <button onclick="myFunction()">view</button>
+        </div>
+        </div>
+        
+        
+        <div class="responsive">
+          <div class="gallery">
+          <a target="_blank" href="03.jpg">
+          <figure id="myFigure">
+          <img src="03.jpg" alt="03" width=350px height=300px>
+          </figure>
+         </a>
+         <button onclick="myFunction()">edit</button>
+        <button onclick="myFunction()">delete</button>
+        <button onclick="myFunction()">view</button>
+        </div>
+        </div>
+        
+          <br>
+          <br>
+          <br>
+        <button onclick="myFunction()">Upload New Photos</button>
+        
+    </div> 
+        
+  <!-- ***** 'Media Library'Section Category 2 ***** -->
+             
+                
+                <button class="accordion">Category 2</button>
+                <div class="panel">
+                  <div class="responsive">
+                    <div class="gallery">
+                    <a target="_blank" href="10a.jpg">
+                    <figure id="myFigure">
+                    <img src="10a.jpg"  alt="10a" width=160px height=140px>
+                    </figure>
+                   </a>
+                   <button onclick="myFunction()">edit</button>
+                <button onclick="myFunction()">delete</button>
+                <button onclick="myFunction()">view</button>
+                </div>
+              </div>
+              <div class="responsive">
+                <div class="gallery">
+                <a target="_blank" href="06.jpg">
+                <figure id="myFigure">
+                <img src="06.jpg"  alt="06" width=160px height=140px>
+                </figure>
+               </a>
+               <button onclick="myFunction()">edit</button>
+            <button onclick="myFunction()">delete</button>
+            <button onclick="myFunction()">view</button>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+            <a target="_blank" href="07.jpg">
+            <figure id="myFigure">
+            <img src="07.jpg"  alt="07" width=160px height=140px>
+            </figure>
+           </a>
+           <button onclick="myFunction()">edit</button>
+        <button onclick="myFunction()">delete</button>
+        <button onclick="myFunction()">view</button>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="myFunction()">Upload New Photos</button>
+            </div> 
+  
+  <!-- ***** 'Media Library'Section Category 3 *****-->
+
+                <button class="accordion">Category 3</button>
+                <div class="panel">
+                  <div class="responsive">
+                    <div class="gallery">
+                    <a target="_blank" href="08.jpg">
+                    <figure id="myFigure">
+                    <img src="08.jpg" alt="08" width=160px height=140px>
+                    </figure>
+                   </a>
+                   <button onclick="myFunction()">edit</button>
+                <button onclick="myFunction()">delete</button>
+                <button onclick="myFunction()">view</button>
+                </div>
+              </div>
+              <div class="responsive">
+                <div class="gallery">
+                <a target="_blank" href="09.jpg">
+                <figure id="myFigure">
+                <img src="09.jpg"  alt="09" width=160px height=140px>
+                </figure>
+               </a>
+               <button onclick="myFunction()">edit</button>
+            <button onclick="myFunction()">delete</button>
+            <button onclick="myFunction()">view</button>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+            <a target="_blank" href="10.jpg">
+            <figure id="myFigure">
+            <img src="10.jpg"  alt="10" width=160px height=140px>
+            </figure>
+           </a>
+           <button onclick="myFunction()">edit</button>
+        <button onclick="myFunction()">delete</button>
+        <button onclick="myFunction()">view</button>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="myFunction()">Upload New Photos</button>
+            </div>  
+
+<!-- ***** 'Media Library'Section add and Delete Categories ***** -->
+
+            <br>
+            <br>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <button onclick="myFunction()">Add New Category</button> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction()">Delete Category</button>
+
+          </div>
+                <div class="clearfix"></div>
+        
+                <div style="padding:6px;">
+           </div> 
+                
+        <script>
+        
+/***** 'Media Library'Section Categories Functionality *****/
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+
+    </script>
+      </article>
+    </div>
+</div>
+
+<!-- ***** 'Manage Users' Section Details ***** -->
+
+
+<div id="Manage Users" class="tabcontent">
+    
+    <h1 class="center" > Current Users</h1>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>User id</th>
+        <th>Email address</th>
+        <th>Access</th>
+        <th>Delete</th>
+      </tr>
+      <tr>
+        <td>Jahnavi</td>
+        <td>Munagala</td>
+        <td>jahnavi</td>
+        <td>jahnavi@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td><img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      <tr>
+        <td>Natalia</td>
+        <td>Shevcun</td>
+        <td>natalaia</td>
+        <td>natalia@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td>
+            <img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      <tr>
+        <td>Nishanth</td>
+        <td>Sakthivel</td>
+        <td>Nishanth</td>
+        <td>nishanth@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td><img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      <tr>
+        <td>Hossein</td>
+        <td>Darparish</td>
+        <td>Hossein</td>
+        <td>hossein@hauntedhouse.com</td>
+        <td>Admin</td>
+        <td><img src="delete icon.png" alt="delete" width="20" height="22"></td>
+      </tr>
+      
+    </table>
+     <br>
+     <br>
+     <br>
+     
+    
+     <h1 class="center">Add a New User</h1>
+       <form action="/action_page.php">
+    
+          <label for="email">Enter email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter email id">
+        
+          <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Team">
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Three">
+        
+        <label for="Roles">Role:</label>
+        <select id="Roles" name="Roles">
+      <option value="Super Admin">Super Admin</option>
+      <option value="Admin">Admin</option>
+      <option value="Editor">Editor</option>
+      <option value="Viewer">Viewer</option>
+    </select>
+    
+    <label for="Expire">Expire:</label>
+     <br>
+    <input type="date" id="Expire" name="Expiry Date:">
+    
+    <br>
+    </select>    
+    <input type="submit" value="Submit">
+        
+      </form>
+    
+    </div>
+
+</div>
+</div>
+</div>
+-->
+<script>
+    
+// ***** Title Header Functionality *****
+
+var header = document.querySelector('.header');
+var origOffsetY =header.offsetTop;
+
+function onScroll(e)
+{
+    window.scrollY >= origOffsetY ? header.classList.add('sticky'):
+                                    header.classList.remove('sticky');
+}
+document.addEventListener('scroll', onScroll);
+
+
+// *****Vertical Tab Sections - Functionality ***** 
+
+function openSection(evt, SectionName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(SectionName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click function
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html> 
