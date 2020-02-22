@@ -1,10 +1,9 @@
 html { 
-        background: url(image/hhouse.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        scroll-behavior: smooth;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -39,44 +38,81 @@ a:hover, a:active {
     text-align: center;
     color: ivory;
     position: relative; bottom: 120px;
-    opacity: 44%;
+    opacity: 0%; /* This element is needed for spacing, but is invisible for now */
 }
 
-.hh {
+.fpff {
     font-family: serif;
     -webkit-font-feature-settings: "smcp";
     font-size: 40px;
     text-align: center;
-    position: relative; bottom: 310px;
-    letter-spacing: 14px;
+    position: relative; bottom: 380px;
+    /*letter-spacing: 14px;  Commented this out in order for the title animation to work */
     color: ivory;
+    opacity: 0%; /* This element is needed for spacing, but is invisible for now */
+}
+
+.fpff2 {
+    font-family: serif;
+    -webkit-font-feature-settings: "smcp";
+    font-size: 40px;
+    text-align: center;
+    position: relative; bottom: 500px;
+    /*letter-spacing: 14px;  Commented this out in order for the title animation to work */
+    color: ivory;
+    opacity: 100%;
+    filter: blur(1.7px);
 }
 
 .bote {
     font-family: sans-serif;
     -webkit-font-feature-settings: "smcp";
     font-size: 20px;
-    text-align: center;
-    position: relative; bottom: 130px;
+    /*text-align: center;*/
+    position: relative; bottom: 178px; left: 47%;
     color: ivory;
     opacity: 84%;
+}
+
+.hrleft {
+    width: 80px; height: 2%;
+    position: relative; bottom: 208px; left: 40%;
+    opacity: 78%;
+}
+
+.hrright {
+    width: 80px; height: 2%;
+    position: relative; bottom: 218px; left: 820px;
+    opacity: 78%;
 }
 
 .section {
     font-family: serif;
     -webkit-font-feature-settings: "smcp";
     font-size: 31px;
-    text-align: left;
+    text-align: center;
     border-left: 20px ivory; 
     color: ivory;
+}
+
+.kiahpic {
+    float: right;
+    position: relative; right: 222px; top: 20px;
+}
+
+.resize {
+    width: 400px;
+    height: 430px;
+    object-fit: cover;
 }
 
 .p1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: auto;
-    text-align: left justify;
+    text-align: left justify; 
     width: 30%;
     color: ivory;
+    position: relative; left: 218px;
 }
 
 label {
@@ -93,7 +129,10 @@ input,textarea,text {
     display: inline-block;
     min-width: 10%;
     max-width:50%;
-    text-align: center;
+    text-align: left;
+    caret-color: red;
+    font-family: sans-serif;
+    color:rgb(115,114,102) 
 }
 
 .mySlides{
@@ -107,7 +146,7 @@ input,textarea,text {
     margin: auto;
     height: 100%;
     min-height: 500px;
-    max-height: 700px;
+    max-height: 600px;
 
 }
 /*The width and height of the slideshow image*/
@@ -115,7 +154,7 @@ input,textarea,text {
     min-width: 500px;
     max-width: 1000px;
     min-height: 500px;
-    max-height: 650px;
+    max-height: 600px;
     height: 100%;
     width: 100%;
 }
@@ -123,7 +162,7 @@ input,textarea,text {
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
-    position: absolute;
+    position: absolute; 
     top: 50%;
     width: auto;
     padding: 16px;
@@ -173,38 +212,158 @@ to {opacity: 1}
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #999999;
+    background-color: ivory;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    position: relative; bottom: 24px;
+    opacity: 40%;
 }
 .active, .dot:hover {
-    background-color: #111111;
-}
-/*Typing animation code */
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 15em;
-    margin: 0 auto;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
+    background-color: ivory;
+    filter: blur(2px);
+    opacity: 70%;
 }
 
-/* Typing Animation */
-.anim-typewriter{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+.vmfj {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-feature-settings: "smcp";
+    font-size: auto;
+    color: ivory;
+    position: relative; right: 225px; bottom: 50px;
 }
-/* Typing Animation */
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 20em;}
+
+.form {
+    padding: 60px 80px 40px 222px; 
 }
-/* Typing Animation */
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+
+/*Blurred background image*/
+.img-src.blurred-image {
+    opacity:0;
+    -webkit-filter: blur(20px) brightness(0.7);
+    -ms-filter: blur(20px) brightness(0.7);
+    -o-filter: blur(20px) brightness(0.7);
+    filter: blur(20px) brightness(0.7);
 }
+
+/* */
+#blurred-image-container {
+    display:block;
+    padding:0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+/*Background Image*/
+.img-src { 
+    position: absolute;
+    background: url(image/hhouse.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    top: -10%;
+    bottom: 10%;
+    left: -10%;
+    right: 10%;
+    width:120%;
+    height:120%;
+}
+/*logo and change opacity when hovering*/
+.logo {
+    font-size: 30px;
+    width: 50px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Start of Fade-in Title Animation Code */
+
+.flong{   
+    animation: fadeIn ease 17s;
+    -webkit-animation: fadeIn ease 17s;
+    -moz-animation: fadeIn ease 17s;
+    -o-animation: fadeIn ease 17s;
+    -ms-animation: fadeIn ease 17s;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .fshort{
+    animation: fadeIn ease 7s;
+    -webkit-animation: fadeIn ease 7s;
+    -moz-animation: fadeIn ease 7s;
+    -o-animation: fadeIn ease 7s;
+    -ms-animation: fadeIn ease 7s;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .fmed{
+    animation: fadeIn ease 12s;
+    -webkit-animation: fadeIn ease 12s;
+    -moz-animation: fadeIn ease 12s;
+    -o-animation: fadeIn ease 12s;
+    -ms-animation: fadeIn ease 12s;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+  
+  /* End Fade-in Title Animation Code */

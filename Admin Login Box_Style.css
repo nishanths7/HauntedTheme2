@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(11.jpg);
+    background: url(image/best_chernobyl/12.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -62,7 +62,7 @@ h1{
     border: none;
     outline: none;
     height: 40px;
-    background: #fb2525;
+    background: #6e6a57;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -70,7 +70,7 @@ h1{
 .loginbox input[type="button"]:hover
 {
     cursor: pointer;
-    background: #ffc107;
+    background: #dbd0af;
     color: #000;
 }
 .loginbox a{

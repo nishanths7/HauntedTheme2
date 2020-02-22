@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery - Gleinig Manor</title>
+    <meta name="keywords" content="haunted, abandoned, urbex, ghost, supernatural, paranormal, urban, manor, explore, spooky, decrepit, delerict">
+    <meta name="description" content="Photo gallery of a haunted location explorer">
+    <link rel="Stylesheet" href="stylegallery.css">
+</head>
+<body>
+    <div class="navbar"> <!-- Navigation -->
+        <a href="haunted theme 2.html#top">home</a>
+        <a href="haunted theme 2.html#about">about</a>
+        <a href="haunted theme 2.html#gallery">gallery</a>
+        <a href="haunted theme 2.html#contact">contact</a>
+        <a href="Admin Login Box_JM.html">login</a>
+    </div>
+    <div class="galtitle" id="gletitle"> <!-- The title of the location Gleinig Manor -->
+      <div class="fshort">g</div>
+      <div class="fmed">l</div>
+      <div class="flong">e</div>
+      <div class="flong">i</div>
+      <div class="fshort">n</div>
+      <div class="flong">i</div>
+      <div class="fmed">g &nbsp;</div>
+      <div class="fmed">m</div>
+      <div class="flong">a</div>
+      <div class="fshort">n</div>
+      <div class="flong">o</div>
+      <div class="fshort">r, &nbsp;</div>
+      <div class="fshort">g</div>
+      <div class="fmed">e</div>
+      <div class="fshort">r</div>
+      <div class="flong">m</div>
+      <div class="flong">a</div>
+      <div class="fmed">n</div>
+      <div class="fshort">y</div>
+    </div>
+    <div class="row">
+      <div class="column left">
+        <div class="content" style="max-width:100%"> <!-- The images that you view in the large window-->
+          <img class="mySlides" src="image/best_manors/01.jpg" style="width:100%" alt="Gleinig 01">
+          <img class="mySlides" src="image/best_manors/02.jpg" style="width:100%;display:none" alt="Gleinig 02">
+          <img class="mySlides" src="image/best_manors/03.jpg" style="width:100%;display:none" alt="Gleinig 03">
+          <img class="mySlides" src="image/best_manors/04.jpg" style="width:100%;display:none" alt="Gleinig 04">
+          <img class="mySlides" src="image/best_manors/05.jpg" style="width:100%;display:none" alt="Gleinig 05">
+          <img class="mySlides" src="image/best_manors/06.png" style="width:100%;display:none" alt="Gleinig 06">
+          <img class="mySlides" src="image/best_manors/07.jpg" style="width:100%;display:none" alt="Gleinig 07">
+          <img class="mySlides" src="image/best_manors/08.jpg" style="width:100%;display:none" alt="Gleinig 08">
+          <img class="mySlides" src="image/best_manors/09.jpg" style="width:100%;display:none" alt="Gleinig 09">
+          <img class="mySlides" src="image/best_manors/10.jpg" style="width:100%;display:none" alt="Gleinig 10">
+          <div class="overlay">Gleinig Manor was an impressive estate built sometime in the XIX century. Unfortunately, not much is known about it. 
+              The estate had been built close to the Czech and German borders of Northern Poland, in a region nowadays known as Schlesien (the part of the region with the mansion
+               on it is now located within the borders of Germany).
+          </div>
+          </div>
+      </div> <!-- The Column Left Div-->
+      
+      <div class="column right">
+        <div class="row-padding section"> <!-- The thumbnail images for Gleinig Manor-->
+        <div class="col s4">
+          <br><br><br>
+          <img class="photo active" src="image/best_manors/01.jpg" alt="gleinig thumbnail 01" 
+          style="width:25%;cursor:pointer" onclick="currentDiv(1)">
+          <img class="photo active" src="image/best_manors/02.jpg" alt="gleinig thumbnail 02"
+          style="width:25%;cursor:pointer" onclick="currentDiv(2)">
+          <img class="photo active" src="image/best_manors/03.jpg" alt="gleinig thumbnail 03"
+          style="width:25%;cursor:pointer" onclick="currentDiv(3)"><br>
+          <img class="photo active" src="image/best_manors/04.jpg" alt="gleinig thumbnail 04"
+          style="width:25%;cursor:pointer" onclick="currentDiv(4)">
+          <img class="photo active" src="image/best_manors/05.jpg" alt="gleinig thumbnail 05"
+          style="width:25%;cursor:pointer" onclick="currentDiv(5)">
+          <img class="photo active" src="image/best_manors/06.png" alt="gleinig thumbnail 06"
+          style="width:25%;cursor:pointer" onclick="currentDiv(6)"><br>
+          <img class="photo active" src="image/best_manors/07.jpg" alt="gleinig thumbnail 07"
+          style="width:25%;cursor:pointer" onclick="currentDiv(7)">
+          <img class="photo active" src="image/best_manors/08.jpg" alt="gleinig thumbnail 08"
+          style="width:25%;cursor:pointer" onclick="currentDiv(8)">
+          <img class="photo active" src="image/best_manors/09.jpg" alt="gleinig thumbnail 09"
+          style="width:25%;cursor:pointer" onclick="currentDiv(9)"><br>
+          <img class="photo active" src="image/best_manors/10.jpg" alt="gleinig thumbnail 10"
+          style="width:25%;cursor:pointer" onclick="currentDiv(10)">
+        </div>
+        </div>
+        <br>
+          <a class="loc" href="miscgallery.html">NEXT LOCATION...</a>
+          <a class="loc" href="cherngallery.html">...previous location</a>
+          <a class="nav" href="navgallery.html"><img src="image/windrose.png" class="navimage" alt="wind rose" style="width:30%;"></a>
+      </div> <!-- The Column Right Div-->
+    </div><!-- The Row Div-->
+
+    <script>
+      function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("photo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(); 
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+</body>
+</html>
