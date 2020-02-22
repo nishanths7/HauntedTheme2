@@ -4,6 +4,8 @@ html {
     -o-background-size: cover;
     background-size: cover;
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -82,7 +84,7 @@ a:hover, a:active {
 
 .hrright {
     width: 80px; height: 2%;
-    position: relative; bottom: 218px; left: 820px;
+    position: relative; bottom: 218px; left: 872px;
     opacity: 78%;
 }
 
