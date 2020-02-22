@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery - Random Interesting Places</title>
+    <meta name="keywords" content="haunted, abandoned, urbex, ghost, supernatural, paranormal, urban, manor, explore, spooky, decrepit, delerict">
+    <meta name="description" content="Photo gallery of a haunted location explorer">
+    <link rel="Stylesheet" href="stylegallery.css">
+</head>
+<body>
+    <div class="navbar"> <!-- Navigation -->
+        <a href="haunted theme 2.html#top">home</a>
+        <a href="haunted theme 2.html#about">about</a>
+        <a href="haunted theme 2.html#gallery">gallery</a>
+        <a href="haunted theme 2.html#contact">contact</a>
+        <a href="Admin Login Box_JM.html">login</a>
+    </div>
+    <div class="galtitle" id="random"> <!-- The title of this page -->
+      <div class="fshort">a</div>
+      <div class="fmed">s</div>
+      <div class="flong">s</div>
+      <div class="flong">o</div>
+      <div class="fshort">r</div>
+      <div class="flong">t</div>
+      <div class="fmed">e</div>
+      <div class="fmed">d &nbsp;</div>
+      <div class="flong">l</div>
+      <div class="fshort">o</div>
+      <div class="flong">c</div>
+      <div class="fshort">a</div>
+      <div class="fshort">t</div>
+      <div class="fmed">i</div>
+      <div class="fshort">o</div>
+      <div class="flong">n</div>
+      <div class="flong">s</div>
+    </div>
+    <div class="row">
+      <div class="column left">
+        <div class="content" style="max-width:100%"> <!-- The images that you view in the large window-->
+          <img class="mySlides" src="image/best_misc/01.jpg" style="width:100%" alt="Misc 01">
+          <img class="mySlides" src="image/best_misc/02.jpg" style="width:100%;display:none" alt="Misc 02">
+          <img class="mySlides" src="image/best_misc/03.jpg" style="width:100%;display:none" alt="Misc 03">
+          <img class="mySlides" src="image/best_misc/04.jpg" style="width:100%;display:none" alt="Misc 04">
+          <img class="mySlides" src="image/best_misc/05.jpg" style="width:100%;display:none" alt="Misc 05">
+          <img class="mySlides" src="image/best_misc/06.jpg" style="width:100%;display:none" alt="Misc 06">
+          <img class="mySlides" src="image/best_misc/07.jpg" style="width:100%;display:none" alt="Misc 07">
+          <img class="mySlides" src="image/best_misc/08.jpg" style="width:100%;display:none" alt="Misc 08">
+          <img class="mySlides" src="image/best_misc/09.jpg" style="width:100%;display:none" alt="Misc 09">
+          <img class="mySlides" src="image/best_misc/10.jpg" style="width:100%;display:none" alt="Misc 10">
+          <div class="overlay">A variety of curious places I have taken a peek at throughout my journey. 
+              Look at every photo very carefully. Some of them feature a little more than a forlorn setting...
+          </div>
+          </div>
+      </div> <!-- The Column Left Div-->
+      
+      <div class="column right">
+        <div class="row-padding section"> <!-- The thumbnail images -->
+        <div class="col s4">
+          <br><br><br>
+          <img class="photo active" src="image/best_misc/01.jpg" alt="misc thumbnail 01" 
+          style="width:25%;cursor:pointer" onclick="currentDiv(1)">
+          <img class="photo active" src="image/best_misc/02.jpg" alt="misc thumbnail 02"
+          style="width:25%;cursor:pointer" onclick="currentDiv(2)">
+          <img class="photo active" src="image/best_misc/03.jpg" alt="misc thumbnail 03"
+          style="width:25%;cursor:pointer" onclick="currentDiv(3)"><br>
+          <img class="photo active" src="image/best_misc/04.jpg" alt="misc thumbnail 04"
+          style="width:25%;cursor:pointer" onclick="currentDiv(4)">
+          <img class="photo active" src="image/best_misc/05.jpg" alt="misc thumbnail 05"
+          style="width:25%;cursor:pointer" onclick="currentDiv(5)">
+          <img class="photo active" src="image/best_misc/06.jpg" alt="misc thumbnail 06"
+          style="width:25%;cursor:pointer" onclick="currentDiv(6)"><br>
+          <img class="photo active" src="image/best_misc/07.jpg" alt="misc thumbnail 07"
+          style="width:25%;cursor:pointer" onclick="currentDiv(7)">
+          <img class="photo active" src="image/best_misc/08.jpg" alt="misc thumbnail 08"
+          style="width:25%;cursor:pointer" onclick="currentDiv(8)">
+          <img class="photo active" src="image/best_misc/09.jpg" alt="misc thumbnail 09"
+          style="width:25%;cursor:pointer" onclick="currentDiv(9)"><br>
+          <img class="photo active" src="image/best_misc/10.jpg" alt="misc thumbnail 10"
+          style="width:25%;cursor:pointer" onclick="currentDiv(10)">
+        </div>
+        </div>
+        <br>
+          <a class="loc" href="expgallery.html">NEXT LOCATION...</a>
+          <a class="loc" href="gleiniggallery.html">...previous location</a>
+          <a class="nav" href="navgallery.html"><img src="image/windrose.png" class="navimage" alt="wind rose" style="width:30%;"></a>
+      </div> <!-- The Column Right Div-->
+    </div><!-- The Row Div-->
+
+    <script>
+      function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("photo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(); 
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+</body>
+</html>

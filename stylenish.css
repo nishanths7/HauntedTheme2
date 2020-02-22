@@ -38,7 +38,7 @@ a:hover, a:active {
     text-align: center;
     color: ivory;
     position: relative; bottom: 120px;
-    opacity: 0%;
+    opacity: 0%; /* This element is needed for spacing, but is invisible for now */
 }
 
 .fpff {
@@ -47,9 +47,9 @@ a:hover, a:active {
     font-size: 40px;
     text-align: center;
     position: relative; bottom: 380px;
-    letter-spacing: 14px;
+    /*letter-spacing: 14px;  Commented this out in order for the title animation to work */
     color: ivory;
-    opacity: 95%;
+    opacity: 0%; /* This element is needed for spacing, but is invisible for now */
 }
 
 .fpff2 {
@@ -58,25 +58,25 @@ a:hover, a:active {
     font-size: 40px;
     text-align: center;
     position: relative; bottom: 500px;
-    letter-spacing: 14px;
+    /*letter-spacing: 14px;  Commented this out in order for the title animation to work */
     color: ivory;
-    opacity: 70%;
-    filter: blur(2.5px);
+    opacity: 100%;
+    filter: blur(1.7px);
 }
 
 .bote {
     font-family: sans-serif;
     -webkit-font-feature-settings: "smcp";
     font-size: 20px;
-    text-align: center;
-    position: relative; bottom: 178px;
+    /*text-align: center;*/
+    position: relative; bottom: 178px; left: 47%;
     color: ivory;
     opacity: 84%;
 }
 
 .hrleft {
     width: 80px; height: 2%;
-    position: relative; bottom: 208px; left: 540px;
+    position: relative; bottom: 208px; left: 40%;
     opacity: 78%;
 }
 
@@ -288,3 +288,82 @@ to {opacity: 1}
     padding: 10px;
     text-align: center;
   }
+
+  /* Start of Fade-in Title Animation Code */
+
+.flong{   
+    animation: fadeIn ease 17s;
+    -webkit-animation: fadeIn ease 17s;
+    -moz-animation: fadeIn ease 17s;
+    -o-animation: fadeIn ease 17s;
+    -ms-animation: fadeIn ease 17s;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .fshort{
+    animation: fadeIn ease 7s;
+    -webkit-animation: fadeIn ease 7s;
+    -moz-animation: fadeIn ease 7s;
+    -o-animation: fadeIn ease 7s;
+    -ms-animation: fadeIn ease 7s;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .fmed{
+    animation: fadeIn ease 12s;
+    -webkit-animation: fadeIn ease 12s;
+    -moz-animation: fadeIn ease 12s;
+    -o-animation: fadeIn ease 12s;
+    -ms-animation: fadeIn ease 12s;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+  
+  /* End Fade-in Title Animation Code */
